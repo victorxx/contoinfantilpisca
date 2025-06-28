@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<!-- Declara que o documento é do tipo HTML5 -->
+
+<html lang="pt-BR">
+<!-- Define a linguagem principal da página como português do Brasil -->
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Define o conjunto de caracteres para UTF-8 (suporte a acentuação) -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Torna a página responsiva para diferentes dispositivos (mobile, tablet etc.) -->
+
+    <meta name="robots" content="index, follow">
+    <!-- Permite que motores de busca indexem a página e sigam seus links -->
+
+    <meta name="description" content="Contos infantis encantadores e educativos para crianças de todas as idades. Explore aventuras mágicas, fábulas e histórias para sonhar.">
+    <!-- Descrição da página para SEO -->
+
+    <meta name="keywords" content="contos infantis, histórias para crianças, fábulas, contos de fadas, literatura infantil, histórias educativas">
+    <!-- Palavras-chave para mecanismos de busca -->
+
+    <meta name="author" content="Mundo dos Contos">
+    <!-- Nome do autor ou organização do conteúdo -->
+
+    <!-- Metatags para redes sociais (Open Graph, usado por Facebook, WhatsApp, etc.) -->
+    <meta property="og:title" content="Contos Infantis Mágicos">
+    <meta property="og:description" content="Histórias encantadoras para crianças sonharem acordadas.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.seusite.com">
+    <meta property="og:image" content="https://www.seusite.com/imagem-de-destaque.jpg">
+
+    <title>Contos Infantis Mágicos</title>
+    <!-- Título que aparece na aba do navegador -->
+
+    <style>
+        /* Estilização geral do corpo da página */
+        body {
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            background: linear-gradient(to right, #ffe7fa, #e0f7fa);
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            color: #333;
+        }
+
+        /* Estilo do cabeçalho */
+        header {
+            background-color: #ffb3ec;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        /* Estilo da propaganda piscante no centro da tela */
+        .propaganda {
+            position: fixed; /* Mantém no mesmo lugar mesmo ao rolar a página */
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #ffff00;
+            border: 5px dashed red;
+            padding: 30px;
+            font-size: 2em;
+            color: #000;
+            animation: piscar 0.8s infinite; /* Aplica animação de piscar */
+            z-index: 9999; /* Mantém acima de todo o conteúdo */
+        }
+
+        /* Animação de piscar da propaganda */
+        @keyframes piscar {
+            0%   { opacity: 1; }
+            50%  { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        /* Container principal dos contos */
+        .conteudo {
+            padding: 40px 20px;
+        }
+
+        /* Estilo de cada conto */
+        .conto {
+            background: #fff;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 700px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        /* Estilo do rodapé */
+        footer {
+            background-color: #ffd6fa;
+            padding: 15px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Cabeçalho com título principal e subtítulo -->
+    <header>
+        <h1>🌟 Contos Infantis Mágicos 🌟</h1>
+        <p>Histórias encantadas para sonhar acordado!</p>
+    </header>
+
+    <!-- Propaganda fixa com link dinâmico -->
+    <div class="propaganda">
+        🎉 <a href="#" id="novo" target="_blank">Conferir</a> 🎉
+        <!-- O link "Conferir" mudará automaticamente usando JavaScript -->
+    </div>
+
+    <!-- Área principal onde ficam os contos -->
+    <div class="conteudo">
+
+        <!-- Conto 1 -->
+        <div class="conto">
+            <h2>A Princesa e o Dragão</h2>
+            <p>Era uma vez uma princesa corajosa que não tinha medo de dragões. Um dia, ela saiu em uma aventura para salvar seu reino...</p>
+        </div>
+
+        <!-- Conto 2 -->
+        <div class="conto">
+            <h2>O Coelhinho Curioso</h2>
+            <p>Num bosque mágico, vivia um coelhinho muito curioso que adorava descobrir coisas novas. Certo dia, ele encontrou uma porta secreta...</p>
+        </div>
+
+        <!-- Conto 3 -->
+        <div class="conto">
+            <h2>O Leão e o Ratinho</h2>
+            <p>Um pequeno ratinho ajuda um grande leão em perigo, provando que até os menores podem ser heróis.</p>
+        </div>
+
+        <!-- Conto 4 -->
+        <div class="conto">
+            <h2>A Estrelinha Medrosa</h2>
+            <p>Uma estrelinha do céu tem medo de brilhar, até descobrir que sua luz é única e especial.</p>
+        </div>
+
+        <!-- Conto 5 -->
+        <div class="conto">
+            <h2>João e o Pé de Feijão</h2>
+            <p>João troca sua vaca por feijões mágicos e sobe até o céu, onde descobre um castelo com tesouros e aventuras.</p>
+        </div>
+
+        <!-- Conto 6 -->
+        <div class="conto">
+            <h2>A Fada do Dente Esquecida</h2>
+            <p>Uma fada atrapalhada quase esquece de visitar uma criança, mas no fim aprende a importância da responsabilidade.</p>
+        </div>
+
+        <!-- Conto 7 -->
+        <div class="conto">
+            <h2>O Gato que Sonhava Voar</h2>
+            <p>Um gatinho sonhador constrói asas de papelão para alcançar o céu — e descobre que voar é mais sobre coragem do que altura.</p>
+        </div>
+
+        <!-- Conto 8 -->
+        <div class="conto">
+            <h2>A Menina e o Balão Azul</h2>
+            <p>Uma menina segue seu balão azul perdido e acaba conhecendo amigos incríveis e um mundo cheio de magia.</p>
+        </div>
+
+        <!-- Conto 9 -->
+        <div class="conto">
+            <h2>O Pinguim que Queria Ver o Sol</h2>
+            <p>Na Antártica, um pinguim curioso decide viajar para lugares quentes e acaba fazendo amizades inesquecíveis.</p>
+        </div>
+
+        <!-- Conto 10 -->
+        <div class="conto">
+            <h2>O Robô do Coração Grande</h2>
+            <p>Em um futuro distante, um robô construtor aprende a cuidar de um filhote abandonado e descobre o que é amor.</p>
+        </div>
+    </div>
+
+    <!-- Rodapé da página -->
+    <footer>
+        &copy; Contos Infantis Mágicos. Todos os direitos reservados.
+    </footer>
+
+    <!-- SCRIPT: código que altera o link da propaganda dinamicamente -->
+    <script>
+        // Função para escolher um link aleatoriamente da lista
+        function mudar() {
+            // Lista de links de propaganda
+            const links = [
+                "https://hostinger.com.br?REFERRALCODE=SSNVICTORXU8",
+                'https://geocredibnkvitoria.com/',
+                'https://vpserp.vercel.app/',
+                'https://creditopessoal.vercel.app/',
+                'https://brasilbrasileiross.blogspot.com/',
+                'https://stfly.biz/7MNLF',
+                'https://www.espiritosanto-es.com.br/linhadotempovitoria/',
+                'https://piadasrepositorio.vercel.app/',
+                'https://www.youtube.com/watch?v=gBclanEnn88',
+                'https://ocomerciobrasileironoticia.blogspot.com/2025/05/erp-profissional-para-empresas.html',
+                'https://www.youtube.com/@gamenologia',
+                'https://jogosantigos472302513.wordpress.com/maquinas-vps-temos-todas-as-opcoes-de-maqinas-para-voce/',
+                'https://geocredibnkvitoria.com/',
+                'https://www.youtube.com/watch?v=gBclanEnn88',
+                'https://bibliadonline.netlify.app/',
+                'https://brasilbrasileiross.blogspot.com/',
+                'https://www.larissasaib.com.br/',
+                'https://remarkable-gelato-4db597.netlify.app/consorciopagina.html',
+                'https://www.airbnb.com.br/r/saibvictore?s=6&t=061n0g',
+                'https://hostinger.com.br/?REFERRALCODE=SSNVICTORXU8'
+            ];
+
+            // Gera índice aleatório com base no tamanho da lista
+            const indice = Math.floor(Math.random() * links.length);
+
+            // Atualiza o atributo 'href' do link com ID "novo"
+            document.getElementById('novo').href = links[indice];
+        }
+
+        // Chama a função mudar a cada 0.1 milissegundos (esse valor é exageradamente rápido!)
+        // RECOMENDADO: usar 2000 (2 segundos) ou mais, para evitar sobrecarga
+        setInterval(mudar, 1);
+    </script>
+</body>
+</html>
